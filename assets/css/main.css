@@ -77,35 +77,10 @@ img {
     overflow: hidden;
 }
 
-
-.md-section {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 9;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-@media (min-width: 320px) {
-    .md-section {
-        padding-top: calc(6.81818vw + 28.18182px);
-        padding-bottom: calc(6.81818vw + 28.18182px);
-    }
-}
-
 @media (max-width: 768px) {
     .change_section {
         top: 150px;
         margin-bottom: 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .md-section {
-        padding-top: 110px;
-        padding-bottom: 110px;
     }
 }
 
@@ -227,25 +202,6 @@ a:focus {
 ::selection {
     color: #fff;
     background-color: #1a1a23;
-}
-
-.md-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-@media (min-width: 320px) {
-    .md-section {
-        padding-top: calc(14.88095vw + 2.38095px);
-        padding-bottom: calc(14.88095vw + 2.38095px);
-    }
-}
-
-@media (min-width: 992px) {
-    .md-section {
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
 }
 
 .btn {
@@ -1216,10 +1172,6 @@ body.md-skin-dark {
     background-color: #1a1a23;
 }
 
-.md-skin-dark {
-    color: rgba(255, 255, 255, .8);
-}
-
 .md-skin-dark h1,
 .md-skin-dark h2,
 .md-skin-dark h3,
@@ -1927,20 +1879,10 @@ mark,
     }
 }
 
-@media (min-width: 320px) {
-    .js-consult-form {
-        padding-bottom: calc(37.20238vw - 69.04762px);
-    }
-}
-
 @media (min-width: 992px) {
     .js-consult-form {
         padding-bottom: 300px;
     }
-}
-
-.js-consult-form .title-01 {
-    margin-bottom: 30px;
 }
 
 .js-consult-form .consult-form {
@@ -3629,29 +3571,9 @@ mark,
     margin-bottom: 15px;
 }
 
-@media (min-width: 768px) {
-    .textbox-group {
-        position: relative;
-        -webkit-transform: translateY(-35%);
-        transform: translateY(-35%);
-    }
-}
-
 
 /* 26. consult_title-01
 --------------------------------------------------------------------------------*/
-
-.title-01 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-@media (min-width: 992px) {
-    .title-01 {
-        margin-bottom: 100px;
-    }
-}
-
 .title-01__subTitle {
     color: #c2c2c2;
     font-weight: 700;
@@ -4009,8 +3931,6 @@ mark,
 --------------------------------------------------------------------------------*/
 
 .header {
-    position: fixed;
-    z-index: 999;
     width: 100%;
     background-color: white;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
@@ -4029,7 +3949,6 @@ mark,
 }
 
 .header .consult-nav {
-    float: right;
     transition: padding .3s ease;
     padding: 35px 20px;
 }
@@ -4046,9 +3965,8 @@ mark,
 
 @media (min-width: 992px) {
     .header .consult-nav {
-        text-align: center;
+        text-align: right;
         padding: 0;
-        float: none;
     }
 }
 
@@ -4061,11 +3979,6 @@ mark,
     .header .search-form {
         margin-left: 40px;
     }
-}
-
-.header.shrink {
-    position: fixed;
-    background-color: white;
 }
 
 .header.shrink .header__logo {
@@ -4174,34 +4087,6 @@ mark,
     transform: translateY(0);
 }
 
-.header__style-02 {
-    background-color: white;
-}
-
-.header__style-02+* {
-    margin-top: 0;
-}
-
-.header__style-02:not(.shrink) {
-    box-shadow: none;
-}
-
-.header__style-02:not(.shrink) .consult-nav .consult-menu>li>a {
-    color: #868686;
-}
-
-.header__style-02:not(.shrink) .consult-nav .consult-menu .current-menu-item>a {
-    color: #f39c12;
-}
-
-.header__style-02:not(.shrink) .dropdown__toggle {
-    color: #c2c2c2;
-}
-
-.header__style-02:not(.shrink) .search-form__toggle {
-    color: #fefefe;
-}
-
 .header__style-03 {
     background-color: transparent;
     box-shadow: none;
@@ -4263,7 +4148,7 @@ mark,
 
 @media (min-width: 993px) {
     .consult-nav {
-        text-align: center;
+        text-align: right;
     }
 
     .consult-nav li:hover>a {
@@ -4705,14 +4590,6 @@ mark,
     color: #c2c2c2;
 }
 
-.big__name {
-    margin-top: 50px;
-    padding-right: 20px;
-    margin-bottom: -180px;
-    text-align: center;
-    max-width: 100%;
-}
-
 .filter__list {
     text-align: center;
     list-style: none;
@@ -4751,21 +4628,7 @@ mark,
 
 .consult-phone {
     color: #f39c12;
-    text-align: center;
-    margin-bottom: 50px;
     font-size: 30px;
-}
-
-@media (min-width: 320px) {
-    .consult-phone {
-        font-size: calc(2.95455vw + 20.54545px);
-    }
-}
-
-@media (min-width: 1200px) {
-    .consult-phone {
-        font-size: 56px;
-    }
 }
 
 .consult-back {
